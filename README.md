@@ -61,5 +61,10 @@ With this doing actions to manipulating a data is easier and sometimes faster, y
 
 `OBS: instead of normalizing your data by id, you can uses normalize(array, 'desired key here') and normalizing your data by any key of the object`
 
+## Merging an existing object
 
+Sometimes you need to concatenate the new results with an existing object, for that just pass the old object as a parameter like:
 
+```js
+normalize(newArray, 'id', prevObj);
+```

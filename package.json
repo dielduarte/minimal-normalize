@@ -1,14 +1,9 @@
 {
   "name": "minimal-normalize",
-  "version": "1.0.5",
-  "description": "",
-  "main": "lib/index.js",
-  "umd:main": "lib/foo.umd.js",
-  "module": "lib/foo.m.js",
-  "source": "index.js",
+  "version": "1.0.6",
+  "description": "normalizing your data before sending to your store",
+  "main": "index.js",
   "scripts": {
-    "build": "microbundle",
-    "dev": "microbundle watch",
     "test": "jest",
     "prepublish": "npm run build"
   },
@@ -18,13 +13,7 @@
   },
   "author": "Diel Duarte",
   "license": "MIT",
-  "dependencies": {
-    "microbundle": "^0.4.4"
-  },
   "devDependencies": {
     "jest": "^22.4.2"
-  },
-  "files": [
-    "lib/"
-  ]
+  }
 }
