@@ -4,8 +4,7 @@
   "description": "normalizing your data before sending to your store",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "prepublish": "npm run build"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
