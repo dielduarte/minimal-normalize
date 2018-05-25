@@ -12,7 +12,7 @@ yarn add minimal-normalize
 import `normalize` function and uses to normalizing your data before sending to your store, example:
 
 ```js
-import normalize from 'minimal-normalize';
+import { normalize } from 'minimal-normalize';
 
 const results = wait fakeRequest('fakeUrlAPI');
 
@@ -67,4 +67,38 @@ Sometimes you need to concatenate the new results with an existing object, for t
 
 ```js
 normalize(newArray, 'id', prevObj);
+```
+
+## unnormalize helper
+
+unnormalize is a simple helper to return a array passing a normalized object.
+
+```js
+import { unnormalize } from 'minimal-normalize';
+
+const normalizedObject = {
+  123131321313: {
+    id: '123131321313',
+    name: 'name1'
+  },
+  728292: {
+    id: '728292',
+    name: 'name2'
+  }
+};
+
+console.log(unnormalize(normalizedObject));
+
+//the console is going to be:
+//   const array = [
+//    {
+//      id: '123131321313',
+//      name: 'name1'
+//    },
+//    {
+//      id: '728292',
+//      name: 'name2'
+//    },
+//  ];
+
 ```

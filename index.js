@@ -1,7 +1,7 @@
-module.exports = (array, key, initializedObj = {}) =>
-  array.reduce((prevObj, nextItem) => {
-    return {
-      ...prevObj,
-      [nextItem[key]]: nextItem
-    }
-  }, initializedObj);
+const normalize = require('./normalize');
+const unnormalize = require('./unnormalize');
+
+module.exports = {
+  normalize: normalize,
+  unnormalize: unnormalize
+};

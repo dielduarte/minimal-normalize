@@ -1,4 +1,4 @@
-const normalize = require('./index');
+const { normalize } = require('./index');
 
 test('should return a normalized object by id', () => {
   const array = [
