@@ -1,10 +1,11 @@
 {
   "name": "minimal-normalize",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "normalizing your data before sending to your store",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "npm test -- --watch"
   },
   "repository": {
     "type": "git",
